@@ -1,0 +1,75 @@
+/* dashboard.module.css */
+
+.videoContainer {
+    position: relative;
+  }
+  
+  .videos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire container */
+  }
+  
+  .dashboard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Make sure this z-index is higher than the video's z-index */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul{
+    list-style-type: none;
+  }
+
+.adminaside{
+    height: 50%;
+    width: 28%;
+    text-align: center;
+    background-color: transparent;
+    opacity: 1.5;
+    box-shadow: 0px 0px 20px #FFA447;
+    
+}
+
+.adminaside h3{
+    padding: 10px 40px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size:x-large;
+    color: white;
+    background-color: #FC6736;
+}
+
+.adminaside ul>li{
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.adminaside>ul>li>a{
+    text-decoration: none;
+    font-size: larger;
+    color: white ;;
+    transition: all ease 0.2s;
+}
+.adminaside>ul>li>a:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+    margin-bottom: 5px;
+
+}
+
+.adminmain{
+    height: 91vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
